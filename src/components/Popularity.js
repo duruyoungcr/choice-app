@@ -15,7 +15,7 @@ const Popularity = ({ question, questions, setQuestions }) => {
         }
       }
     }
-    if (!matchSuccess) {
+    if (matchSuccess === false) {
       const questionsArray = [...questions, { question, count: 1 }];
       setQuestions(questionsArray);
     }
