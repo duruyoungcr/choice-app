@@ -3,7 +3,7 @@ import React from "react";
 const Option = ({ options, setOptions, index, choice, setError }) => {
   const handleOption = (e, index) => {
     const newOptions = [...options];
-    newOptions[index] = e.target.value.trim();
+    newOptions[index] = e.target.value;
     setOptions([...newOptions]);
     setError("");
   };

@@ -12,7 +12,7 @@ const Form = ({
   setError,
 }) => {
   const handleQuestion = (e) => {
-    setQuestion(e.target.value.trim());
+    setQuestion(e.target.value);
     setError("");
   };
 
